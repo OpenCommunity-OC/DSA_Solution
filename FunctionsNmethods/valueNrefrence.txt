@@ -1,0 +1,8 @@
+ Pass by Value (Primitive Types):
+When you pass a primitive type (e.g., int, float, boolean) to a method, a copy of the actual value is passed.
+Changes made to the parameter inside the method do not affect the original value outside the method.
+
+
+Pass by Value (Reference to Objects):
+When you pass an object (non-primitive type) to a method, the reference to the object is passed by value.
+This means the method receives a copy of the reference, and changes made to the object's state inside the method are reflected outside the method.
