@@ -7,6 +7,9 @@ public class nestedMultiplication {
         for (int i = 1; i <= 20; i++) {
             for (int j = 0; j <=10; j++) {
                 System.out.println(i+"X"+j+"="+i*j);
+
+                System.out.println();
+
             }
             
         }
