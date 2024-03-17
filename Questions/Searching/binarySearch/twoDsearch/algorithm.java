@@ -1,5 +1,6 @@
-package Questions.Searching.binarySearch.twoDsearch;
 
+// Note: This opeartion is to only apply if the matrix is sorted at ROW wise and COlumn wise
+package Questions.Searching.binarySearch.twoDsearch;
 import java.util.Arrays;
 
 public class algorithm {
@@ -10,7 +11,7 @@ public class algorithm {
         {28,29,37,49},
         {33,34,38,50}
      };
-     int target=37;
+     int target=44;
      System.out.println(Arrays.toString(twoDarray(matrix, target)));
     }
     static int[] twoDarray(int[][] matrix, int target){
