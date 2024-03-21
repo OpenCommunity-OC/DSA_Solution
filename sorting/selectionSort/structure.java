@@ -27,7 +27,7 @@ public class structure {
         }
         return maxVal;
     }
-    //function for swapping
+    //function for swapping the swp bascially whihc add sthe two number
     static void swap(int[] arr,int first,int second){
         int temp=arr[first];
         arr[first]=arr[second];
