@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class struct2 {
     public static void main(String[] args) {
-        int[] arr={2,3,1};
+        int[] arr={66,69,90};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -13,7 +13,7 @@ public class struct2 {
         int i=0;
         while (i<arr.length) {
             int correct=arr[i]-1;
-            if (arr[i]!=arr[correct]){
+            if (arr[i]==arr[correct]){
                 swap(arr,i,correct);
             }
             else{
@@ -28,5 +28,4 @@ public class struct2 {
             arr[first]=arr[second];
             arr[second]=temp;
     }
-    
 }
