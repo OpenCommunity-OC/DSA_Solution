@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class structure {
     public static void main(String[] args) {
-        int[] arr={1,3,1,2};
+        int[] arr={5, 2, 7, 1, 3};
         selection(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -13,8 +13,8 @@ public class structure {
         for (int i = 0; i < arr.length; i++) {
             //find max item  in remaining array and swap with correct index
             int last=arr.length-i-1;
-            int maxIndex=maxIndex(arr, 0, last);
-            swap(arr, maxIndex, last);
+            int maxValue=maxIndex(arr, 0, last);
+            swap(arr, maxValue, last);
         }
     }
     // function for max value from an arr
@@ -32,7 +32,5 @@ public class structure {
         int temp=arr[first];
         arr[first]=arr[second];
         arr[second]=temp;
-    }
-
-    
+    } 
 }
