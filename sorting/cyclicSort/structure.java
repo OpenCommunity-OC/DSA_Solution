@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class structure {
     public static void main(String[] args) {
-        int[] arr = {6,2,1};
+        int[] arr = {1,2};
         cyclicSort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -12,11 +12,11 @@ public class structure {
     static void cyclicSort(int[] arr) {
         int i = 0;
         while (i < arr.length) {
-            int correct = arr[i] - 1;
-            if (arr[i] != arr[correct]) {
-                swap(arr, i, correct);
-            } else {
+            int correct = arr[i] -1;
+            if (arr[i] == arr[correct]) { // 1 is not equal to 1
                 i++;
+            } else {
+                swap(arr, i, correct);
             }
         }
     }
