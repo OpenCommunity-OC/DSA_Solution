@@ -1,5 +1,4 @@
 package sorting.cyclicSort;
-
 import java.util.Arrays;
 
 public class structure {
