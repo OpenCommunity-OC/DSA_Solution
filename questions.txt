@@ -1,0 +1,46 @@
+--floor of number:
+a biggest number, smaller than the target element
+    Example 1:
+    array element=[1,2,3,5]
+    target=4
+    then the ans is: 3 // in array format is 2
+
+    Example 2:
+    array element=[1,2,3,5]
+    target=2
+    then the ans is: 2 // in array format is 1
+
+--Ceil of number:
+a smallest number, bigger than the target element
+    Example 1:
+    array element=[1,2,3,5]
+    target=4
+    then the ans is: 5 // in array format is 3
+
+    Example 2:
+    array element=[1,2,3,5]
+    target=5
+    then the ans is: 5 // in array format is 4
+
+--infiniteArray:
+    // length of an array is not specified
+    // here our main agenda is only to find the length of the array, i.e start and end, and rest apply the binarySearch
+    // so from the binary search logic we only remove the start and end, rest all are same not a single change made.
+    // logic for finding the range is, by increasing the size of an array after each iteration.
+    // we will keep on increasing the size of an array until we find the target element.
+        Logic:
+            int start=0;
+            int end=1;
+            while (target>arr[end]) {
+                int temp=end+1; // storing for start in temporary variable.
+                end=(end-start+1)*2; // finding end logic.
+                start=temp; // start=end +1.
+            }
+            return binarySearch(arr, target, start, end);
+    HINT: generally in binarySearch we divide the no. of steps by two, to make it half.
+          but here we will just do the reverse engineering, i.e by multiplying it    
+
+    
+
+
+    

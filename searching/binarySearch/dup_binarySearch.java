@@ -2,8 +2,8 @@ package searching.binarySearch;
 
 public class dup_binarySearch {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5,6};
-        int target=3;
+        int[] arr={24,69,100,99,79,78,67,36,26,19};
+        int target=100;
         int res=binarySearch(arr, target);
         System.out.println(res);
     }

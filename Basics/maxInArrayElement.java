@@ -2,7 +2,7 @@ package Basics;
 
 public class maxInArrayElement {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4};//4
+        int[] arr={24,69,100,99,79,78,67,36,26,19};//4
         int res=maxElement(arr);
         System.out.println(res);
     }
