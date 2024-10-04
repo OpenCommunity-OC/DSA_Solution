@@ -1,5 +1,5 @@
 package Questions.Searching.binarySearch;
-
+// The Brute force method for this solution.
 public class dup_peakMountaion {
     public static void main(String[] args) {
         int[] arr={24,69,100,99,79,78,67,36,26,19};
